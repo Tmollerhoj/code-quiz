@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div id="highscore">
+            <button onclick="showHighscores()">highscores</button>
+        </div>
+        <div id="timer"></div>
+    </header>
+
+    <section id="landing-page">
+        <h1>
+            Welcome!
+        </h1>
+        <p>
+            Welcome to the Code Quiz Game! Press start to begin answering questions, but be careful. Every wrong answer will remove 10 seconds from the timer.
+        </p>
+        <button onclick="start()">
+            Start!
+        </button>
+    </section>
+
+    <section class="hide" id="QnA-page">
+        <h1>QnA</h1>
+        <div id="question">
+
+        </div>
+        <div>
+            <ul id="choices"></ul>
+        </div>
+        <div id="feedback">
+
+        </div>
+    </section>
+
+    <section class="hide" id="highscore-page">
+        <h1>HIGHSCORES</h1>
+        <button onclick="start()">Restart the Quiz</button>
+    </section>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
